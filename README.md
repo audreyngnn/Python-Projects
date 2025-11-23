@@ -9,12 +9,14 @@ The model was trained on historical data and applied to unseen listings, with th
 - **Guests**: Compare predicted fair prices against listings to make better booking decisions
 - **Platforms**: Enhance pricing systems with more transparent, accurate, and explainable algorithms
 
+<br>
+
 ## 📂 Dataset
 The project was built on structured Airbnb listing data provided in two files:
 - **train.csv**: 7,000 rows × 61 columns (includes target variable: `price`)
 - **test.csv**: 3,000 rows × 60 columns (excludes target variable: `price`)
 
----
+<br>
 
 ## 🔎 Project Workflow
 
@@ -25,7 +27,8 @@ The project was built on structured Airbnb listing data provided in two files:
 - Identified outliers and highlighted correlations between variables and price
 - Built early insights into which factors (e.g., location, amenities, host behavior) drive price differences
 
-  
+<br>
+
 ### 2. Data Cleaning and Engineering 
 `Part 2_Data_Engineering.ipynb`
 
@@ -54,8 +57,9 @@ def preprocess(df: pd.DataFrame, ref_df: pd.DataFrame) -> pd.DataFrame:
 | **Noise Reduction** | Groups rare categories to prevent overfitting on outliers |
 | **Scalability** | Modular functions make the pipeline reusable for other datasets |
 
-A strong data pipeline ensures the model learns from **reliable, consistent, and business-relevant variables** — this has a greater impact on accuracy than algorithm choice alone.
+A comprehensive data pipeline ensures the model learns from **reliable, consistent, and business-relevant variables**, which has a greater impact on accuracy than algorithm choice alone.
 
+<br>
 
 ### 3. Predictive Modeling
 `Part 3_Predictives.ipynb`
@@ -63,7 +67,7 @@ A strong data pipeline ensures the model learns from **reliable, consistent, and
 - Built a **stacked ensemble** combining these models to reduce error and capture complementary strengths
 - Used **Optuna** for hyperparameter tuning, balancing accuracy with generalization
 
----
+<br>
 
 ## 🏆 Results
 
@@ -75,7 +79,7 @@ A strong data pipeline ensures the model learns from **reliable, consistent, and
 
 ![](Final_Results.PNG)
 
----
+<br>
 
 ## 💡 Key Takeaways
 
@@ -83,4 +87,4 @@ A strong data pipeline ensures the model learns from **reliable, consistent, and
 - **Generalizable pipeline**: The feature engineering and cleaning framework can be applied to other pricing or recommendation problems
 - **Exposure to ML**: Built and tuned predictive models to demonstrate how clean data enables stronger outcomes
 
----
+<br>
