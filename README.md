@@ -1,4 +1,4 @@
-# Predictive Analysis: AirBnb Pricing in Melbourne
+# Predictive Analytics: AirBnb Pricing in Melbourne
 
 ## 📌 Project Overview
 
